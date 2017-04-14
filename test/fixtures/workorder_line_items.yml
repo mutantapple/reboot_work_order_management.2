@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  approved: false
+  added_by: 1
+  workorder_id: 
+  is_part: false
+  name: MyText
+  price: 1.5
+  recomended_by: 1
+  approved_by: 1
+  inventory_id: 1
+  compleated_by: 1
+  compleated: false
+  is_reload: false
+  is_data_recovery: false
+
+two:
+  approved: false
+  added_by: 1
+  workorder_id: 
+  is_part: false
+  name: MyText
+  price: 1.5
+  recomended_by: 1
+  approved_by: 1
+  inventory_id: 1
+  compleated_by: 1
+  compleated: false
+  is_reload: false
+  is_data_recovery: false
