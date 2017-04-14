@@ -1,49 +1,38 @@
-<p id="notice"><%= notice %></p>
+<%- model_class = Workorder -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => Workorder %></h1>
+</div>
 
-<p>
-  <strong>Store:</strong>
-  <%= @workorder.store %>
-</p>
+<div class="fieldset">
+  <dl>
+      <dt class="label label-default"><%= model_class.human_attribute_name(:work_status) %></dt>
+      <dd><pre class="prettyprint"><%= @workorder.work_status %></pre></dd>
+      <dt class="label label-default"><%= model_class.human_attribute_name(:customer_id) %></dt>
+      <dd><pre class="prettyprint"><%= @workorder.customer_id %></pre></dd>
+      <dt class="label label-default"><%= model_class.human_attribute_name(:store_id) %></dt>
+      <dd><pre class="prettyprint"><%= @workorder.store_id %></pre></dd>
+      <dt class="label label-default"><%= model_class.human_attribute_name(:check_in_by) %></dt>
+      <dd><pre class="prettyprint"><%= @workorder.check_in_by %></pre></dd>
+      <dt class="label label-default"><%= model_class.human_attribute_name(:test_by) %></dt>
+      <dd><pre class="prettyprint"><%= @workorder.test_by %></pre></dd>
+      <dt class="label label-default"><%= model_class.human_attribute_name(:finish_by) %></dt>
+      <dd><pre class="prettyprint"><%= @workorder.finish_by %></pre></dd>
+      <dt class="label label-default"><%= model_class.human_attribute_name(:take_posession_after) %></dt>
+      <dd><pre class="prettyprint"><%= @workorder.take_posession_after %></pre></dd>
+      <dt class="label label-default"><%= model_class.human_attribute_name(:paid_diaganostic_fee) %></dt>
+      <dd><pre class="prettyprint"><%= @workorder.paid_diaganostic_fee %></pre></dd>
+  </dl>
+</div>
 
-<p>
-  <strong>Work status:</strong>
-  <%= @workorder.work_status %>
-</p>
+<div class="form-group">
+  <%= link_to t('.back', :default => t("helpers.links.back")),
+              workorders_path, :class => 'btn btn-default'  %>
+  <%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_workorder_path(@workorder), :class => 'btn btn-default' %>
+  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              workorder_path(@workorder),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' %>
+</div>
 
-<p>
-  <strong>Customer:</strong>
-  <%= @workorder.customer_id %>
-</p>
-
-<p>
-  <strong>Store:</strong>
-  <%= @workorder.store_id %>
-</p>
-
-<p>
-  <strong>Check in by:</strong>
-  <%= @workorder.check_in_by %>
-</p>
-
-<p>
-  <strong>Test by:</strong>
-  <%= @workorder.test_by %>
-</p>
-
-<p>
-  <strong>Finish by:</strong>
-  <%= @workorder.finish_by %>
-</p>
-
-<p>
-  <strong>Take posession after:</strong>
-  <%= @workorder.take_posession_after %>
-</p>
-
-<p>
-  <strong>Paid diaganostic fee:</strong>
-  <%= @workorder.paid_diaganostic_fee %>
-</p>
-
-<%= link_to 'Edit', edit_workorder_path(@workorder) %> |
-<%= link_to 'Back', workorders_path %>

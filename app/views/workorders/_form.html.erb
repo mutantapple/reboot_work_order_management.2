@@ -1,19 +1,58 @@
-<%= simple_form_for(@workorder) do |f| %>
-  <%= f.error_notification %>
-
-  <div class="form-inputs">
-    <%= f.association :store %>
-    <%= f.input :work_status %>
-    <%= f.input :customer_id %>
-    <%= f.input :store_id %>
-    <%= f.input :check_in_by %>
-    <%= f.input :test_by %>
-    <%= f.input :finish_by %>
-    <%= f.input :take_posession_after %>
-    <%= f.input :paid_diaganostic_fee %>
+<%= form_for @workorder, :html => { :class => 'form-horizontal form-model' } do |f| %>
+  <div class="form-group">
+    <%= f.label :work_status, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :work_status, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :customer_id, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :customer_id, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :store_id, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :store_id, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :check_in_by, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :check_in_by, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :test_by, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.date_select :test_by, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :finish_by, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.date_select :finish_by, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :take_posession_after, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.date_select :take_posession_after, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :paid_diaganostic_fee, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.check_box :paid_diaganostic_fee, :class => 'text-field form-control' %>
+    </div>
   </div>
 
-  <div class="form-actions">
-    <%= f.button :submit %>
+  <div class="form-group">
+    <div class='col-md-offset-2 col-md-10'>
+      <%= f.submit nil, :class => 'btn btn-primary' %>
+      <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                  workorders_path, :class => 'btn btn-default' %>
+    </div>
   </div>
 <% end %>
