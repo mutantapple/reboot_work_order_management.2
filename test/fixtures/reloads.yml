@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  workorder_line_item_id: 1
+  os_version: MyText
+
+two:
+  workorder_line_item_id: 1
+  os_version: MyText
