@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  store_id: 
+  work_status: 1
+  customer_id: 1
+  store_id: 1
+  check_in_by: 1
+  test_by: 2017-04-14
+  finish_by: 2017-04-14
+  take_posession_after: 2017-04-14
+  paid_diaganostic_fee: false
+
+two:
+  store_id: 
+  work_status: 1
+  customer_id: 1
+  store_id: 1
+  check_in_by: 1
+  test_by: 2017-04-14
+  finish_by: 2017-04-14
+  take_posession_after: 2017-04-14
+  paid_diaganostic_fee: false
