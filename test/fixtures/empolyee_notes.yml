@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  note: MyText
+  workorder_id: 
+  workorder_id: 1
+  empolyee_id: 1
+
+two:
+  note: MyText
+  workorder_id: 
+  workorder_id: 1
+  empolyee_id: 1
