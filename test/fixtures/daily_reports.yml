@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  taxable: 1.5
+  labor: 1.5
+  store_id: 
+
+two:
+  taxable: 1.5
+  labor: 1.5
+  store_id: 
