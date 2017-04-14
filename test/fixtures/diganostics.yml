@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  boot: false
+  hdd_good: false
+  cpu_good: false
+  workorder_id: 1
+  ram_good: false
+  gpu_good: false
+  blow_caps: false
+  power_suply_good: false
+  numb_of_viruses: 1
+  num_of_adware: 1
+
+two:
+  boot: false
+  hdd_good: false
+  cpu_good: false
+  workorder_id: 1
+  ram_good: false
+  gpu_good: false
+  blow_caps: false
+  power_suply_good: false
+  numb_of_viruses: 1
+  num_of_adware: 1
