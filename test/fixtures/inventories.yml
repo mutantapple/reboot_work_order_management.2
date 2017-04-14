@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  price: 1.5
+  status_id: 1
+  date_ordered: 2017-04-14
+  date_recived: 2017-04-14
+  brand: MyText
+  os: MyText
+  part: false
+  computer: false
+  store_id: 1
+  cpu_speed: 1.5
+  ram: 1
+  hdd_size: 1
+  cpu_core_count: MyText
+  cpu_type: MyText
+  optical_drive: MyText
+
+two:
+  name: MyString
+  price: 1.5
+  status_id: 1
+  date_ordered: 2017-04-14
+  date_recived: 2017-04-14
+  brand: MyText
+  os: MyText
+  part: false
+  computer: false
+  store_id: 1
+  cpu_speed: 1.5
+  ram: 1
+  hdd_size: 1
+  cpu_core_count: MyText
+  cpu_type: MyText
+  optical_drive: MyText
