@@ -1,0 +1,19 @@
+<%= simple_form_for(@workorder) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.association :store %>
+    <%= f.input :work_status %>
+    <%= f.input :customer_id %>
+    <%= f.input :store_id %>
+    <%= f.input :check_in_by %>
+    <%= f.input :test_by %>
+    <%= f.input :finish_by %>
+    <%= f.input :take_posession_after %>
+    <%= f.input :paid_diaganostic_fee %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

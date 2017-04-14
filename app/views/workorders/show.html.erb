@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Store:</strong>
+  <%= @workorder.store %>
+</p>
+
+<p>
+  <strong>Work status:</strong>
+  <%= @workorder.work_status %>
+</p>
+
+<p>
+  <strong>Customer:</strong>
+  <%= @workorder.customer_id %>
+</p>
+
+<p>
+  <strong>Store:</strong>
+  <%= @workorder.store_id %>
+</p>
+
+<p>
+  <strong>Check in by:</strong>
+  <%= @workorder.check_in_by %>
+</p>
+
+<p>
+  <strong>Test by:</strong>
+  <%= @workorder.test_by %>
+</p>
+
+<p>
+  <strong>Finish by:</strong>
+  <%= @workorder.finish_by %>
+</p>
+
+<p>
+  <strong>Take posession after:</strong>
+  <%= @workorder.take_posession_after %>
+</p>
+
+<p>
+  <strong>Paid diaganostic fee:</strong>
+  <%= @workorder.paid_diaganostic_fee %>
+</p>
+
+<%= link_to 'Edit', edit_workorder_path(@workorder) %> |
+<%= link_to 'Back', workorders_path %>
